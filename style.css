@@ -2,11 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #333;
     color: #333;
 }
 header {
-    background-color: #000b6e;
+    background-color: #333;
     color: white;
     text-align: center;
 }
@@ -14,35 +14,92 @@ nav {
     display: flex;
     justify-content: center;
     background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
+
 nav a {
     color: white;
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
+    color: white; margin: 0 10px; text-decoration: none;
 }
 nav a:hover {
     background-color: #000b6e;
 }
 .container {
-    padding: 20px;
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
+    padding: 0;
 }
+
 .section {
-    margin-bottom: 40px;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
 }
-.project {
-    background-color: white;
-    margin: 20px 0;
+
+#about {
+    position: relative;
+    background-image: url('Startup Pitch Deck/about.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: #333;
+    text-align: left;
+}
+  
+#about p {
+    position: absolute;
+    top: 50%; 
+    left: 5%; 
+    transform: translateY(-35%); 
+    background: rgba(51, 51, 51, 0.6);
+    color: white;
+    margin: 0;
+    padding: 15px;
+    border-radius: 3px;
+    max-width: 400px; 
+    line-height: 1.5; 
+}
+
+#project h2{
+    color: #333;
+}
+  
+#projects .project {
+    margin-bottom: 20px;
+    background: #f9f9f9;
     padding: 20px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 8px;
 }
+  
+#projects .project a {
+    color: #007bff;
+    text-decoration: none;
+}
+  
+#projects .project a:hover {
+    text-decoration: underline;
+}
+  
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #333;
-    color: white;
+    background: #333;
+    color: #aaa;
 }
+  
+
+
 
